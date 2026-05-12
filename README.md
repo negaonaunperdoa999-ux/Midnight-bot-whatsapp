@@ -31,4 +31,38 @@ O Midnight não foi apenas "baixado e ligado". Ele passou por um processo intens
 1.  **A Fusão:** Unificamos o `index.js` da Nazuna com a estrutura de pastas e módulos da Hutao.
 2.  **Poda de Código Legado:** Removemos centenas de funções duplicadas e comandos "mortos" para otimizar o consumo de RAM na hospedagem (HidenCloud).
 3.  **Motor Genérico de Logos:** Em vez de centenas de arquivos individuais, criamos um handler universal que mapeia requisições dinâmicas para APIs de imagem, economizando milhares de linhas de código.
-4.  **Correção de Fluxo:** Implementamos um sistema de compat
+4.  **Correção de Fluxo:** Implementamos um sistema de compatibilidade (`compat.js`) para garantir que aliases e comandos antigos da Hutao funcionem perfeitamente no motor atual.
+5.  **Segurança:** Reforçamos os gates de permissão (`isOwner`, `isGroupAdmins`) e criamos uma lista de donos por grupo (`groupOwners`), garantindo controle total sobre funções críticas.
+
+---
+
+## 📦 Tecnologias Utilizadas
+
+* **Linguagem:** Node.js (JavaScript/ESM)
+* **Base de Conexão:** Baileys (WhatsApp Multi-Device)
+* **Hospedagem:** HidenCloud (Ambiente Docker)
+* **API de Imagens:** Sirv (Dynamic Text Overlay)
+* **Assistência:** Codex AI (Refatoração customizada)
+
+---
+
+## 📝 Notas do Desenvolvedor
+
+Este bot é um projeto em constante evolução, focado em ser o "Laboratório de Lógica" definitivo para nosso círculo de amigos e para o **IFPA Campus Itaituba**. 
+
+> "Transformando código em diversão, uma mensagem por vez." 🏮
+
+---
+
+## 🛠️ Como Instalar (Para Desenvolvedores)
+
+1. Clone o repositório.
+2. Certifique-se de ter o **Node.js v20+** instalado.
+3. Rode `npm install` para instalar as dependências.
+4. Configure sua sessão e as chaves de API no arquivo de configuração.
+5. Inicie o bot com `npm start`.
+
+
+
+
+
